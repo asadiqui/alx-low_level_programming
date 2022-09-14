@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
@@ -7,6 +6,14 @@
  *
  * Description: intended for -10 <= numbers <= 111
  */
+
+/* not allowed to use stdlib.h; get the absolute value */
+int _abs(int n)
+{
+	if (n < 0)
+		n = (-1) * n;
+	return (n);
+}
 
 void print_to_98(int n)
 {
@@ -38,13 +45,13 @@ void print_to_98(int n)
 			if (n <= -10)
 			{
 				_putchar('-');
-				_putchar(abs(n) / 10 + '0');
-				_putchar(abs(n) % 10 + '0');
+				_putchar(_abs(n) / 10 + '0');
+				_putchar(_abs(n) % 10 + '0');
 			}
 			else
 			{
 				_putchar('-');
-				_putchar(abs(n) % 10 + '0');
+				_putchar(_abs(n) % 10 + '0');
 			}
 		}
 
