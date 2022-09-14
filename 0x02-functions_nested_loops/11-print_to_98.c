@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
@@ -37,13 +37,13 @@ void print_to_98(int n)
 			if (n <= -10)
 			{
 				_putchar('-');
-				_putchar(abs(n) / 10 + '0');
-				_putchar(abs(n) % 10 + '0');
+				_putchar(_abs(n) / 10 + '0');
+				_putchar(_abs(n) % 10 + '0');
 			}
 			else
 			{
 				_putchar('-');
-				_putchar(abs(n) % 10 + '0');
+				_putchar(_abs(n) % 10 + '0');
 			}
 		}
 
