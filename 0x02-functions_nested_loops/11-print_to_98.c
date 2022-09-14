@@ -38,13 +38,13 @@ void print_to_98(int n)
 			if (n <= -10)
 			{
 				_putchar('-');
-				_putchar(_abs(n) / 10 + '0');
-				_putchar(_abs(n) % 10 + '0');
+				_putchar(abs(n) / 10 + '0');
+				_putchar(abs(n) % 10 + '0');
 			}
 			else
 			{
 				_putchar('-');
-				_putchar(_abs(n) % 10 + '0');
+				_putchar(abs(n) % 10 + '0');
 			}
 		}
 
