@@ -4,10 +4,15 @@
  * print_to_98 - prints all natural numbers from n to 98
  * @n: Start from this integer
  *
- * Description: intended for -10 <= numbers <= 111
+ * Description: checked for -98 <= n <= 111
  */
 
-/* not allowed to use stdlib.h; get the absolute value */
+/**
+ * _abs - get the absolute value 
+ * @n: of this integer
+ *
+ * Return: the absolute value
+ */
 int _abs(int n)
 {
 	if (n < 0)
@@ -65,4 +70,5 @@ void print_to_98(int n)
 
 	_putchar('9'); /* 98 reached */
 	_putchar('8');
+	_putchar('\n');
 }
