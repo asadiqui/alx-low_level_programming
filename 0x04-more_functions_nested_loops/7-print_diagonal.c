@@ -1,23 +1,28 @@
 #include "main.h"
 
 /**
- * print_diagonal - draws a diagonal line
- * @n: spaces before the diagonal
+ * print_diagonal - prints diagonal stuff
+ *
+ * @n: integer to set diagonal
  */
 
 void print_diagonal(int n)
 {
-	int sttc = n; /* store orgnl val */
-	int i;
+	int i, j;
 
-	for (i = 1; i <= n; i++)
+	if (n <= 0)
 	{
-		for (j = 1; j <= n; j++)
+		_putchar('\n');
+	} else
+	{
+		for (i = 0; i < n; i++)
 		{
-			_putchar(' ');
+			for (j = 0; j < i; j++)
+			{
+				_putchar(' ');
+			}
 			_putchar('\\');
+			_putchar('\n');
 		}
 	}
-	if (sttc <= 0)
-		_putchar('\n');
 }

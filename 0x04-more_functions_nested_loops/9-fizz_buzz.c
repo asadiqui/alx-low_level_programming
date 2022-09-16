@@ -7,7 +7,9 @@
 
 int main(void)
 {
-	for (int i = 1; i <= 100 ; i++)
+	int i;
+
+	for (i = 1; i <= 100 ; i++)
 
 	{
 		int fizz = i % 3;
@@ -25,5 +27,6 @@ int main(void)
 			printf("%d ", i);
 	}
 
+	putchar('\n');
 	return (0);
 }
