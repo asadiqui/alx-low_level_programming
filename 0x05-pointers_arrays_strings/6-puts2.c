@@ -3,18 +3,14 @@
 /**
  * puts2 - prints every other character of a string
  * @str: string parameter input
- *
- * Return: Noting
  */
 
 void puts2(char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; ++i)
+	while (*str != '\0')
 	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
+		putchar(*str);
+		str+=2;
 	}
 	_putchar('\n');
 }
