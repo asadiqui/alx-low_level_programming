@@ -14,10 +14,3 @@ void _print_rev_recursion(char *s)
 		_putchar(*s); /* stored in the stack */
 	}
 }
-/**
- * int main(void)
- * {
- *     _print_rev_recursion("\nColton Walker");
- *         return (0);
- *         }
- */
