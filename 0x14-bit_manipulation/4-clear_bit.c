@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * clear_bit - Set the value of a bit at a given index to 0

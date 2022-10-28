@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * get_bit - Return the value of a bit at a given index

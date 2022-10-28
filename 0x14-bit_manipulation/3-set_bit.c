@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * set_bit - Print out the binary representation of an unsigned long int
